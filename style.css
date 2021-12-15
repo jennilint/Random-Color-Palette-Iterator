@@ -1,0 +1,403 @@
+@font-face { font-family: Wagon; src: url('Wagon-Bold.otf'); } 
+
+@media print {
+    body {-webkit-print-color-adjust: exact;}
+    }
+
+* {
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#headerContainer {
+    display: flex;
+}
+#header {
+    top: 0;
+    display: block;
+    width: 1000px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+#headerText {
+    display: block;
+    width: 1000px;
+    font-size: 35px;
+    padding-top: 25px;
+    margin-left: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    font-family: 'Wagon';
+}
+#headerText:hover {
+    text-decoration: underline;
+}
+.emptyBlock {
+    height: 50px;
+    width: 60%;
+    margin-top: 5px;
+    border-top: 2px solid black;
+}
+@media only screen and (max-width: 1000px) {
+    .emptyBlock {
+        width: 0%;
+    }
+}
+h2 {
+    text-align: center;
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+}
+h3 {
+    font-size: 14px;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 400;
+}
+p {
+    text-align: center;
+    font-family: 'Readex Pro', sans-serif;
+}
+#content {
+    max-width: 1600px;
+    min-width: 1200px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    /*outline: 3px solid black;*/
+}
+
+
+/* OPTIONS ELEMENTS */
+.optionsHeader {
+    font-size: 14px;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 500;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    text-align: center;
+}
+.optionsContainer {
+    display: flex;
+}
+.optionsContainer2 {
+    display: block;
+}
+#optionsBlock {
+    display: block;
+    width: 173px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: 2px solid;
+}
+.optionButton {
+    outline: 2px solid black;
+    background-color: white;
+    border: none;
+    margin-bottom: 8px;
+    width: 147px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 700;
+}
+.optionButton:hover {
+    text-decoration: underline;
+}
+.colorButton {
+    outline: 2px solid black;
+    background-color: white;
+    border: none;
+    margin-bottom: 8px;
+    width: 31.5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 700; 
+}
+.optionButton:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.optionButtonSmaller {
+    outline: 2px solid black;
+    border: none;
+    margin-bottom: 8px;
+    width: 31.5px;
+    padding: 6px;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 700;
+}
+.optionButtonSmaller:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+#button0, #button1, #button2, #button3 {margin-right: 7px;}
+#button5 {background-color: white; height: 25px; margin-right: 7px; margin-bottom: 7px;}
+#button6 {background-color: #D0D0D0; height: 25px; margin-right: 7px; margin-bottom: 7px;}
+#button7 {background-color: #DDC7A0; height: 25px; margin-right: 7px; margin-bottom: 7px;}
+#button8 {background-color: black; height: 25px; margin-right: 7px; margin-bottom: 7px;}
+#button13 {background-color: #80aaff; height: 25px; margin-right: 7px; margin-bottom: 7px;}
+#button14 {background-color: #ff99ff; height: 25px; margin-right: 7px; margin-bottom: 7px;}
+#button15 {background-color: #ffff99; height: 25px; margin-right: 7px; margin-bottom: 7px;}
+#button16 {background-color: #80ff80; height: 25px; margin-right: 7px; margin-bottom: 7px;}
+
+/* SEPERATOR */
+.seperator {
+    width: 100%;
+    display: block;
+    border-bottom: 2px solid black;
+}
+/* GALLERY */
+#gallery {
+    width: 40%;
+    height: 80vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border-left: 2px solid;
+}
+
+.combinationContainer {
+    display: block;
+    width: 40px;
+    height: 23vh;
+    margin: 8px;
+}
+.combinationContainer:hover {
+    cursor: pointer;
+}
+
+.colorBlock {
+    display: block;
+    height: 50%;
+    width: 40px;
+}
+.colorBlock2 {
+    display: none;
+    height: 50%;
+    width: 40px;
+}
+.colorBlock3 {
+    display: none;
+    height: 30px;
+    width: 40px;
+}
+.colorBlock4 {
+    display: none;
+    height: 24px;
+    width: 40px;
+}
+#displayColorBlock0, #displayColorBlock1, #displayColorBlock2, #displayColorBlock3, #displayColorBlock4 {
+    height: 250px;
+}
+
+/* DISPLAY ELEMENTS */
+#sideContainer {
+    border-left: 2px solid black;
+    border-right: 2px solid;
+    padding-top: 10px;
+    width: 900px;
+}
+#instructionText {
+    font-family: 'Readex Pro', sans-serif;
+    line-height: 1.3;
+    padding: 10px;  
+    text-align: left;
+}
+#displayBlockCombination {
+    display: none;
+    width: 99%;
+    margin: 10px;
+}
+.displayBlock {
+    display: none;
+    height: 75px;
+    width: 48%;
+}
+.displayBlock2 {
+    display: none;
+    height: 75px;
+    width: 48%;
+}
+#variationsContainer {
+    display: block;
+}
+#displayGradientCombination {
+    display: block;
+    width: 95.04%;
+    height: 250px;
+    margin: 10px;
+}
+#displayLetterContainer {
+    display: none;
+    width: 95.04%;
+    height: 250px;
+    margin: 10px;
+    justify-content: center;
+}
+/* COLOR INFORMATION */
+#valueContainer {
+    display: block;
+    padding: 6px;
+}
+#valueText {
+    display: flex;
+}
+.singleValueContainer{
+    margin-right: 20px;
+    width: 70px;
+    padding: 5px;
+}
+.colorValueBlock {
+    display: block;
+    height: 35px;
+    width: 35px;
+    margin-bottom: 5px;
+    -webkit-print-color-adjust: exact; 
+}
+#displayShapesContainer {
+    margin: 10px;
+    display: none;
+    justify-content: center;
+}
+#displayGraphsContainer {
+    margin: 10px;
+    display: none;
+    justify-content: center;
+    padding-top: 35px;
+}
+#displayCharacterContainer {
+    margin: 10px;
+    display: none;
+}
+
+/* GENERATE PDF BUTTON */
+#generatePDF {
+    background-color: white;
+    outline: 2px solid black;
+    border: none;
+    margin: 10px;
+    padding: 10px 15px 10px 15px;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 700;
+    width: 250px;
+}
+#generatePDF:hover {
+    cursor: pointer;
+}
+/* FOOTER */
+#footer {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+.footerLink {
+    font-size: 20px;
+    font-family: 'Wagon';
+    text-decoration: none;
+    color: black;
+    padding: 5px 25px 5px 25px;
+    margin-bottom: 20px;
+}
+.footerLink:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* ABOUT PAGE */
+.flexTextContainer {
+    display: flex;
+    max-width: 1400px;
+    min-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.textContainer {
+    width: 870px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding: 30px;
+}
+#contactTextContainer {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+#leftAboutText {
+    border-left: 2px solid black;
+}
+#rightAboutText {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.header {
+    font-family: 'Wagon';
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+#aboutHeader {
+    text-align: left;
+}
+.tagline {
+    font-family: 'Wagon';
+    font-size: 50px; 
+    text-align: left;
+    line-height: 1.2;
+}
+.text {
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 17px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    text-align: left;
+}
+#contactText {
+    text-align: center;
+}
+/* ANIMATION */
+
+#animationContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.animationBlock {
+    height: 30px;
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    background-color: white;
+    transition: all 2s;
+    outline: 2px solid black;
+}
+.colorValueAni {
+    font-family: 'Wagon';
+    text-align: right;  
+    transition: all 2s;
+    font-size: 20px;
+}

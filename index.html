@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Random Color Combination Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="headerContainer">
+        <div class="emptyBlock"></div>
+        <div id="header">
+            <a id="headerText" href="index.html">Random Color Palette Iterator</a>
+        </div>
+        <div class="emptyBlock"></div>
+    </div>
+    <div class="seperator"></div>
+    <div id="content">
+        <div id="optionsBlock">
+            <button id="button4" class="optionButton" type="button">generate new colors</button>
+            <h1 class="optionsHeader">background Color</h1>
+            <div class="optionsContainer">
+                <button id="button5" class="optionButton colorButton" type="button"> </button>
+                <button id="button6" class="optionButton colorButton" type="button"> </button>
+                <button id="button7" class="optionButton colorButton" type="button"> </button>
+                <button id="button8" class="optionButton colorButton" type="button"> </button>
+            </div>
+            <div class="optionsContainer">
+                <button id="button13" class="optionButton colorButton" type="button"> </button>
+                <button id="button14" class="optionButton colorButton" type="button"> </button>
+                <button id="button15" class="optionButton colorButton" type="button"> </button>
+                <button id="button16" class="optionButton colorButton" type="button"> </button>
+            </div>
+            <h1 class="optionsHeader">number of colors</h1>
+            <div class="optionsContainer">
+                <button id="button0" class="optionButtonSmaller numberButton" type="button">2</button>
+                <button id="button1" class="optionButtonSmaller numberButton" type="button">3</button>
+                <button id="button2" class="optionButtonSmaller numberButton" type="button">4</button>
+                <button id="button3" class="optionButtonSmaller numberButton" type="button">5</button>
+            </div> 
+            <h1 class="optionsHeader">display as</h1>
+            <div class="optionsContainer2">
+                <button id="button9" class="optionButton displayButton" type="button">rectangles</button>
+                <button id="button10" class="optionButton displayButton" type="button">gradient</button>
+                <button id="button11" class="optionButton displayButton" type="button">typography</button>
+                <button id="button17" class="optionButton displayButton" type="button">graphs</button>
+                <button id="button12" class="optionButton displayButton" type="button">shapes</button>
+                <button id="button18" class="optionButton displayButton" type="button">character</button>
+            </div> 
+        </div>
+        <div id="gallery">
+            <div id="combination0" class="combinationContainer">
+                <div id="colorBlock0.0" class="colorBlock"></div>
+                <div id="colorBlock0.1" class="colorBlock"></div>
+                <div id="colorBlock0.2" class="colorBlock2"></div>
+                <div id="colorBlock0.3" class="colorBlock3"></div>
+                <div id="colorBlock0.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination1" class="combinationContainer">
+                <div id="colorBlock1.0" class="colorBlock"></div>
+                <div id="colorBlock1.1" class="colorBlock"></div>
+                <div id="colorBlock1.2" class="colorBlock2"></div>
+                <div id="colorBlock1.3" class="colorBlock3"></div>
+                <div id="colorBlock1.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination2" class="combinationContainer">
+                <div id="colorBlock2.0" class="colorBlock"></div>
+                <div id="colorBlock2.1" class="colorBlock"></div>
+                <div id="colorBlock2.2" class="colorBlock2"></div>
+                <div id="colorBlock2.3" class="colorBlock3"></div>
+                <div id="colorBlock2.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination3" class="combinationContainer">
+                <div id="colorBlock3.0" class="colorBlock"></div>
+                <div id="colorBlock3.1" class="colorBlock"></div>
+                <div id="colorBlock3.2" class="colorBlock2"></div>
+                <div id="colorBlock3.3" class="colorBlock3"></div>
+                <div id="colorBlock3.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination4" class="combinationContainer">
+                <div id="colorBlock4.0" class="colorBlock"></div>
+                <div id="colorBlock4.1" class="colorBlock"></div>
+                <div id="colorBlock4.2" class="colorBlock2"></div>
+                <div id="colorBlock4.3" class="colorBlock3"></div>
+                <div id="colorBlock4.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination5" class="combinationContainer">
+                <div id="colorBlock5.0" class="colorBlock"></div>
+                <div id="colorBlock5.1" class="colorBlock"></div>
+                <div id="colorBlock5.2" class="colorBlock2"></div>
+                <div id="colorBlock5.3" class="colorBlock3"></div>
+                <div id="colorBlock5.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination6" class="combinationContainer">
+                <div id="colorBlock6.0" class="colorBlock"></div>
+                <div id="colorBlock6.1" class="colorBlock"></div>
+                <div id="colorBlock6.2" class="colorBlock2"></div>
+                <div id="colorBlock6.3" class="colorBlock3"></div>
+                <div id="colorBlock6.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination7" class="combinationContainer">
+                <div id="colorBlock7.0" class="colorBlock"></div>
+                <div id="colorBlock7.1" class="colorBlock"></div>
+                <div id="colorBlock7.2" class="colorBlock2"></div>
+                <div id="colorBlock7.3" class="colorBlock3"></div>
+                <div id="colorBlock7.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination8" class="combinationContainer">
+                <div id="colorBlock8.0" class="colorBlock"></div>
+                <div id="colorBlock8.1" class="colorBlock"></div>
+                <div id="colorBlock8.2" class="colorBlock2"></div>
+                <div id="colorBlock8.3" class="colorBlock3"></div>
+                <div id="colorBlock8.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination9" class="combinationContainer">
+                <div id="colorBlock9.0" class="colorBlock"></div>
+                <div id="colorBlock9.1" class="colorBlock"></div>
+                <div id="colorBlock9.2" class="colorBlock2"></div>
+                <div id="colorBlock9.3" class="colorBlock3"></div>
+                <div id="colorBlock9.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination10" class="combinationContainer">
+                <div id="colorBlock10.0" class="colorBlock"></div>
+                <div id="colorBlock10.1" class="colorBlock"></div>
+                <div id="colorBlock10.2" class="colorBlock2"></div>
+                <div id="colorBlock10.3" class="colorBlock3"></div>
+                <div id="colorBlock10.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination11" class="combinationContainer">
+                <div id="colorBlock11.0" class="colorBlock"></div>
+                <div id="colorBlock11.1" class="colorBlock"></div>
+                <div id="colorBlock11.2" class="colorBlock2"></div>
+                <div id="colorBlock11.3" class="colorBlock3"></div>
+                <div id="colorBlock11.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination12" class="combinationContainer">
+                <div id="colorBlock12.0" class="colorBlock"></div>
+                <div id="colorBlock12.1" class="colorBlock"></div>
+                <div id="colorBlock12.2" class="colorBlock2"></div>
+                <div id="colorBlock12.3" class="colorBlock3"></div>
+                <div id="colorBlock12.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination13" class="combinationContainer">
+                <div id="colorBlock13.0" class="colorBlock"></div>
+                <div id="colorBlock13.1" class="colorBlock"></div>
+                <div id="colorBlock13.2" class="colorBlock2"></div>
+                <div id="colorBlock13.3" class="colorBlock3"></div>
+                <div id="colorBlock13.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination14" class="combinationContainer">
+                <div id="colorBlock14.0" class="colorBlock"></div>
+                <div id="colorBlock14.1" class="colorBlock"></div>
+                <div id="colorBlock14.2" class="colorBlock2"></div>
+                <div id="colorBlock14.3" class="colorBlock3"></div>
+                <div id="colorBlock14.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination15" class="combinationContainer">
+                <div id="colorBlock15.0" class="colorBlock"></div>
+                <div id="colorBlock15.1" class="colorBlock"></div>
+                <div id="colorBlock15.2" class="colorBlock2"></div>
+                <div id="colorBlock15.3" class="colorBlock3"></div>
+                <div id="colorBlock15.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination16" class="combinationContainer">
+                <div id="colorBlock16.0" class="colorBlock"></div>
+                <div id="colorBlock16.1" class="colorBlock"></div>
+                <div id="colorBlock16.2" class="colorBlock2"></div>
+                <div id="colorBlock16.3" class="colorBlock3"></div>
+                <div id="colorBlock16.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination17" class="combinationContainer">
+                <div id="colorBlock17.0" class="colorBlock"></div>
+                <div id="colorBlock17.1" class="colorBlock"></div>
+                <div id="colorBlock17.2" class="colorBlock2"></div>
+                <div id="colorBlock17.3" class="colorBlock3"></div>
+                <div id="colorBlock17.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination18" class="combinationContainer">
+                <div id="colorBlock18.0" class="colorBlock"></div>
+                <div id="colorBlock18.1" class="colorBlock"></div>
+                <div id="colorBlock18.2" class="colorBlock2"></div>
+                <div id="colorBlock18.3" class="colorBlock3"></div>
+                <div id="colorBlock18.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination19" class="combinationContainer">
+                <div id="colorBlock19.0" class="colorBlock"></div>
+                <div id="colorBlock19.1" class="colorBlock"></div>
+                <div id="colorBlock19.2" class="colorBlock2"></div>
+                <div id="colorBlock19.3" class="colorBlock3"></div>
+                <div id="colorBlock19.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination20" class="combinationContainer">
+                <div id="colorBlock20.0" class="colorBlock"></div>
+                <div id="colorBlock20.1" class="colorBlock"></div>
+                <div id="colorBlock20.2" class="colorBlock2"></div>
+                <div id="colorBlock20.3" class="colorBlock3"></div>
+                <div id="colorBlock20.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination21" class="combinationContainer">
+                <div id="colorBlock21.0" class="colorBlock"></div>
+                <div id="colorBlock21.1" class="colorBlock"></div>
+                <div id="colorBlock21.2" class="colorBlock2"></div>
+                <div id="colorBlock21.3" class="colorBlock3"></div>
+                <div id="colorBlock21.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination22" class="combinationContainer">
+                <div id="colorBlock22.0" class="colorBlock"></div>
+                <div id="colorBlock22.1" class="colorBlock"></div>
+                <div id="colorBlock22.2" class="colorBlock2"></div>
+                <div id="colorBlock22.3" class="colorBlock3"></div>
+                <div id="colorBlock22.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination23" class="combinationContainer">
+                <div id="colorBlock23.0" class="colorBlock"></div>
+                <div id="colorBlock23.1" class="colorBlock"></div>
+                <div id="colorBlock23.2" class="colorBlock2"></div>
+                <div id="colorBlock23.3" class="colorBlock3"></div>
+                <div id="colorBlock23.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination24" class="combinationContainer">
+                <div id="colorBlock24.0" class="colorBlock"></div>
+                <div id="colorBlock24.1" class="colorBlock"></div>
+                <div id="colorBlock24.2" class="colorBlock2"></div>
+                <div id="colorBlock24.3" class="colorBlock3"></div>
+                <div id="colorBlock24.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination25" class="combinationContainer">
+                <div id="colorBlock25.0" class="colorBlock"></div>
+                <div id="colorBlock25.1" class="colorBlock"></div>
+                <div id="colorBlock25.2" class="colorBlock2"></div>
+                <div id="colorBlock25.3" class="colorBlock3"></div>
+                <div id="colorBlock25.4" class="colorBlock4"></div>
+            </div>
+            <div id="combination26" class="combinationContainer">
+                <div id="colorBlock26.0" class="colorBlock"></div>
+                <div id="colorBlock26.1" class="colorBlock"></div>
+                <div id="colorBlock26.2" class="colorBlock2"></div>
+                <div id="colorBlock26.3" class="colorBlock3"></div>
+                <div id="colorBlock26.4" class="colorBlock4"></div>
+            </div>
+        </div>
+        <div id="sideContainer">
+            <div id="instructionContainer">
+                <p id="instructionText">Directions: (1) click on 'generate new colors'; (2) choose a background color; (3) choose how many colors you want in your combination; (4) select the format for combination display; (5) discover cool color combinations!</h2>
+            </div>  
+            <div class="seperator"></div>
+            <div id="variationsContainer">
+                <div id="displayBlockCombination">
+                    <div id="displayColorBlock0" class="displayBlock"></div>
+                    <div id="displayColorBlock1" class="displayBlock"></div>
+                    <div id="displayColorBlock2" class="displayBlock2"></div>
+                    <div id="displayColorBlock3" class="displayBlock2"></div>
+                    <div id="displayColorBlock4" class="displayBlock2"></div>
+                </div>
+                <div id="displayGradientCombination"></div>
+                <div id="displayLetterContainer">
+                    <svg width="650" height="250">
+                        <path id="letter0" d="M 90.34 99.66 l -0.81 0.27 C 83.84 89.78 77.87 86 66.47 85.86 c -11.76 0.18 -22.26 11.67 -21.82 30 s 9.62 30.63 19.68 30.63 c 6.41 0 12 -5 18.53 -16.91 l 0.8 0.26 L 80.36 145 c -4.63 0.09 -11 2.76 -18.52 2.76 c -16 0 -30.81 -11.84 -30.63 -29 C 31.29 103.94 43.76 89 60.59 85.77 H 52.4 C 38.51 85.77 31.12 90.14 25 101 l -0.8 -0.18 L 27.56 85.5 c 8.54 -0.62 22.79 -1 30.09 -1 h 30.9 Z"/>
+                        <path id="letter1" d="M 147.32 103.49 c -6.5 0 -9.17 6.77 -9.17 6.77 l 0.09 -0.09 l -20.93 44.35 c -2.58 5.79 -4.81 10.51 -10 10.51 l -9 -2.76 l -2 -15.23 l 0.81 -0.18 c 3.47 8.19 8.37 14.34 12.28 14.43 c 2.14 0.09 4.28 -2.14 6.51 -7.3 l 3.29 -7.13 L 98.79 103.49 h -6 l -1.07 -1.15 h 26.9 l 1.07 1.15 c -5.35 0 -6 2.68 -5.62 4.63 l 11.49 25.21 l 14.07 -29.84 h -6.23 l -1.07 -1.15 h 13.89 Z"/>
+                        <path id="letter2" d="M 187.21 147.75 c -7.75 0 -14.25 -4.63 -17.54 -11.75 v 27.69 h 6 l 1.07 1.16 H 152.12 l -1.07 -1.16 c 4.37 0 5.7 -3 6.15 -5.16 v -55 h -5.88 l -1.07 -1.15 h 24.58 l 1.07 1.15 c -6.23 0 -6.23 6.42 -6.23 6.42 v 3.74 c 3.47 -7.31 10.59 -12.2 19.85 -12.2 c 12.29 0 24.22 8.37 24.22 23.15 C 213.74 137.87 203 147.75 187.21 147.75 Z m 0.71 -45 c -10 0 -18 9.17 -18.25 22.71 v 0.8 c 0.17 11.31 7.74 19.86 16.38 19.86 c 9.44 0 14.7 -8.28 15 -23.87 C 201.19 108.84 195.76 102.78 187.92 102.78 Z"/>
+                        <path id="letter3" d="M 220.69 124.6 c 0 -13.54 11.22 -23.15 27.6 -23.15 c 16.74 0 27.34 10.15 27.34 23.15 c 0 12.82 -10.95 23.15 -27.34 23.15 C 231.55 147.75 220.69 137.51 220.69 124.6 Z m 42.12 -2.32 c 0.27 -11.66 -5.26 -19.5 -13.63 -19.5 c -9.52 0 -15.49 9.44 -15.76 23.69 c -0.18 12 5.34 19.95 13.8 19.95 C 257 146.42 262.63 137.33 262.81 122.28 Z"/>
+                        <path id="letter4" d="M 305.55 101.45 a 26.08 26.08 0 0 1 9.52 1.69 a 8.5 8.5 0 0 0 -0.53 -8.37 l 17.19 -0.63 v 0.72 c -7.75 0.8 -12.56 4.54 -15.5 8.72 c 5.61 2.59 9.89 7.39 9.89 14.79 c 0 11.3 -10.78 16.92 -20.57 16.92 a 29 29 0 0 1 -12.74 -2.85 c -3.74 3.65 -4.45 13.09 -0.18 14.33 a 7.68 7.68 0 0 0 2.5 0.36 c 10.33 0 21.19 -18 30.54 -15.41 c 11.49 3.21 6.68 33.75 -25.91 33.75 a 64.48 64.48 0 0 1 -8.91 -0.71 l -5 -15.14 l 0.53 -0.44 c 3.47 6 9.89 6.59 16 6.59 c 23.95 0 33.13 -19.51 23.86 -18 c -7.21 1.16 -13 12.2 -25.11 12.2 a 24.78 24.78 0 0 1 -9.08 -1.87 c -7.93 -2.94 -8.37 -11.67 -0.27 -16.21 c -4.63 -2.76 -8 -7.12 -8 -13.53 C 283.82 107.59 295.93 101.45 305.55 101.45 Z M 303.85 134 c 6.86 0.27 9.35 -7.75 9.89 -15.5 s -0.54 -15.49 -7.39 -15.85 c -7 -0.35 -9.62 7 -10.24 15.23 C 295.48 126.74 297.89 133.77 303.85 134 Z"/>
+                        <path id="letter5" d="M 383 119.7 l -0.71 0.27 c -3.74 -5.61 -8.64 -12.11 -12.56 -12.29 c -3.74 -0.18 -10.24 5.25 -13.71 15 V 145.7 h 6 l 1.07 1.16 H 338.49 l -1.07 -1.16 c 4.36 0 5.7 -3 6.14 -5.07 V 103.49 h -5.87 l -1.07 -1.15 H 361.2 l 1.06 1.15 c -6.23 0 -6.23 6.42 -6.23 6.42 v 9.61 c 3.21 -8.63 11.84 -17.54 21 -17.18 Z"/>
+                        <path id="letter6" d="M 413.11 145.7 c 5.07 0 6 -4 6.14 -5.87 V 124.69 c -2.49 10.24 -9.17 23.06 -19.59 23.06 c -6.86 0 -13.18 -5.52 -13 -13.89 l 32.59 -19.32 v -1.7 c 0 -7.74 -5.43 -9.88 -9.88 -9.79 c -6.42 0.18 -14.88 7.12 -20.4 16.92 l -0.89 -0.18 l 4.37 -15.14 l 16.92 -3.2 c 7.39 0 22.08 3.2 22.35 11.13 V 145.7 h 6 l 1.07 1.16 H 414.17 Z M 401 127.63 c -1.78 5.25 -0.17 14.16 4.9 14.16 c 6.59 -0.09 12.56 -15.23 13.36 -24.32 V 116 Z"/>
+                        <path id="letter7" d="M 478.55 147.75 c -7.74 0 -14.24 -4.63 -17.54 -11.75 v 27.69 h 6 l 1.06 1.16 H 443.47 l -1.07 -1.16 c 4.36 0 5.7 -3 6.14 -5.16 v -55 h -5.87 l -1.07 -1.15 h 24.57 l 1.07 1.15 c -6.23 0 -6.23 6.42 -6.23 6.42 v 3.74 c 3.47 -7.31 10.6 -12.2 19.86 -12.2 c 12.29 0 24.22 8.37 24.22 23.15 C 505.09 137.87 494.31 147.75 478.55 147.75 Z m 0.72 -45 c -10 0 -18 9.17 -18.26 22.71 v 0.8 c 0.18 11.31 7.75 19.86 16.39 19.86 c 9.43 0 14.69 -8.28 15 -23.87 C 492.53 108.84 487.1 102.78 479.27 102.78 Z"/>
+                        <path id="letter8" d="M 511.4 145.7 c 4.37 0 5.7 -3 6.15 -5.07 V 85.68 h -5.88 l -1.07 -1.15 h 24.58 l 1.07 1.15 C 530 85.68 530 92.1 530 92.1 v 24.4 c 4.54 -8.2 9.44 -14.88 18.61 -14.88 s 14.69 6.68 15.14 14.25 l 0.08 29.83 h 6 l 1.07 1.16 H 546.31 l -1.07 -1.16 c 4.64 0 5.79 -3.38 6.15 -5.52 V 117.12 c 0 -4.19 -0.71 -11.85 -6.77 -11.85 c -5.16 0 -10.33 5.62 -14.6 14.25 V 145.7 h 6 l 1.07 1.16 H 512.47 Z"/>
+                        <path id="letter9" d="M 625.83 103.49 c -6.5 0 -9.17 6.77 -9.17 6.77 l 0.09 -0.09 l -20.93 44.35 c -2.58 5.79 -4.81 10.51 -10 10.51 l -9 -2.76 L 574.8 147 l 0.8 -0.18 c 3.48 8.19 8.38 14.34 12.29 14.43 c 2.14 0.09 4.28 -2.14 6.5 -7.3 l 3.3 -7.13 L 577.3 103.49 h -6 l -1.07 -1.15 h 26.9 l 1.06 1.15 c -5.34 0 -6 2.68 -5.61 4.63 l 11.49 25.21 l 14.07 -29.84 h -6.23 l -1.07 -1.15 h 13.89 Z"/>
+                        </svg>
+                    </div> 
+                <div id="displayShapesContainer">
+                    <svg width="750" height="250">
+                        <rect id="shape0.0" x="374.34" width="62.25" height="62.34"/>
+                        <rect id="shape0.1" x="62.5" width="125" height="124.9"/>
+                        <rect id="shape0.2" x="187.5" y="125" width="125" height="125"/>
+                        <rect id="shape0.3" x="437.5" y="125" width="62.5" height="125"/>
+                        <rect id="shape0.4" x="500" width="62.5" height="124.9"/>
+                        <rect id="shape0.5" y="125" width="62.5" height="125"/>
+                        <rect id="shape0.6" x="312.09" y="62.34" width="62.25" height="62.25"/>
+                        <rect id="shape0.7" x="562.5" y="125.05" width="125" height="124.9"/>
+                        <rect id="shape0.8" x="688.16" width="61.84" height="124.9"/>
+                        <polygon id="shape1.0" points="687.5 125.1 625 125.1 656.25 62.6 687.5 125.1"/>
+                        <polygon id="shape1.1" points="687.5 62.6 625 62.6 656.25 0.1 687.5 62.6"/>
+                        <polygon id="shape1.2" points="437.27 125.05 437.27 250.05 312.27 187.55 437.27 125.05"/>
+                        <polygon id="shape1.3" points="125 125.05 187.5 125.05 156.25 187.55 125 125.05"/>
+                        <polygon id="shape1.4" points="125 187.55 187.5 187.55 156.25 250.05 125 187.55"/>
+                        <polygon id="shape1.5" points="187.5 125 187.5 0 312.5 62.5 187.5 125"/>
+                        <polygon id="shape1.6" points="0 62.5 0 0 62.5 31.25 0 62.5"/>
+                        <polygon id="shape1.7" points="0 125 0 62.5 62.5 93.75 0 125"/>
+                        <polygon id="shape1.8" points="687.5 187.55 687.5 125.05 750 156.3 687.5 187.55"/>
+                        <polygon id="shape1.9" points="687.5 250.05 687.5 187.55 750 218.8 687.5 250.05"/>
+                        <polygon id="shape1.10" points="500 0.1 500 62.6 437.5 31.35 500 0.1"/>
+                        <path id="shape2.0" d="M124.54.22a62.37,62.37,0,1,0,0,124.73Z" transform="translate(0 0.05)"/>
+                        <path id="shape2.1" d="M187.5.22a62.37,62.37,0,1,0,0,124.73Z" transform="translate(0 0.05)"/>
+                        <path id="shape2.2" d="M624.94.09a62.37,62.37,0,1,0,0,124.73Z" transform="translate(0 0.05)"/>
+                        <path id="shape2.3" d="M0,249.41A62.43,62.43,0,0,0,62.5,187,62.43,62.43,0,0,0,0,124.68Z" transform="translate(0 0.05)"/>
+                        <path id="shape2.4" d="M187.5,249.73a62.37,62.37,0,1,0,0-124.73Z" transform="translate(0 0.05)"/>
+                        <path id="shape2.5" d="M750,.18a62.37,62.37,0,1,0,0,124.73Z" transform="translate(0 0.05)"/>
+                        <path id="shape2.6" d="M311.93,124.36A62.21,62.21,0,1,0,311.93,0Z" transform="translate(0 0.05)"/>
+                        <path id="shape2.7" d="M249.77,249.41a62.37,62.37,0,1,0,0-124.73Z" transform="translate(0 0.05)"/>
+                        <path id="shape2.8" d="M500,187.55a31.3,31.3,0,1,0,0-62.6Z" transform="translate(0 0.05)"/>
+                        <path id="shape2.9" d="M562.62,125a31.3,31.3,0,1,0,0,62.6Z" transform="translate(0 0.05)"/>
+                        <path id="shape2.10" d="M500,250.05a31.3,31.3,0,1,0,0-62.6Z" transform="translate(0 0.05)"/>
+                        <path id="shape2.11" d="M562.62,187.45a31.3,31.3,0,1,0,0,62.6Z" transform="translate(0 0.05)"/>
+                        <path id="shape2.12" d="M562.33,187.5a31.3,31.3,0,1,0,0-62.6Z" transform="translate(0 0.05)"/>
+                        <path id="shape2.13" d="M624.94,124.9a31.3,31.3,0,1,0,0,62.6Z" transform="translate(0 0.05)"/>
+                        <path id="shape2.14" d="M562.33,250a31.3,31.3,0,1,0,0-62.6Z" transform="translate(0 0.05)"/>
+                        <path id="shape2.15" d="M624.94,187.4a31.3,31.3,0,1,0,0,62.6Z" transform="translate(0 0.05)"/>
+                        <path id="shape2.16" d="M62,187.55A31.3,31.3,0,1,0,62,125Z" transform="translate(0 0.05)"/>
+                        <path id="shape2.17" d="M124.6,125a31.3,31.3,0,1,0,0,62.6Z" transform="translate(0 0.05)"/>
+                        <path id="shape2.18" d="M62,250.05a31.3,31.3,0,1,0,0-62.6Z" transform="translate(0 0.05)"/>
+                        <path id="shape2.19" d="M124.6,187.45a31.3,31.3,0,1,0,0,62.6Z" transform="translate(0 0.05)"/>
+                        <circle id="shape3.0" cx="289.32" cy="102.73" r="13.17"/>
+                        <circle id="shape3.1" cx="13.17" cy="187.5" r="13.17"/>
+                        <circle id="shape3.2" cx="405.97" cy="31.25" r="31.25"/>
+                        <circle id="shape3.3" cx="405.47" cy="93.75" r="31.25"/>
+                        <circle id="shape3.4" cx="13.17" cy="138.12" r="13.17"/>
+                        <circle id="shape3.5" cx="13.17" cy="236.78" r="13.17"/>
+                        <circle id="shape3.6" cx="736.83" cy="62.59" r="13.17"/>
+                        <circle id="shape3.7" cx="736.83" cy="13.21" r="13.17"/>
+                        <circle id="shape3.8" cx="736.83" cy="111.87" r="13.17"/>
+                        <circle id="shape3.9" cx="656.4" cy="156.25" r="31.25"/>
+                        <circle id="shape3.10" cx="655.9" cy="218.75" r="31.25"/>
+                        <circle id="shape3.11" cx="289.32" cy="26.38" r="13.17"/>
+                        <circle id="shape3.12" cx="468.75" cy="187.55" r="13.17"/>
+                        <circle id="shape3.13" cx="468.75" cy="138.17" r="13.17"/>
+                        <circle id="shape3.14" cx="468.75" cy="236.83" r="13.17"/>
+                        <circle id="shape3.15" cx="162.19" cy="62.54" r="13.17"/>
+                        <circle id="shape3.16" cx="93.75" cy="62.59" r="13.17"/>
+                    </svg>
+                </div>
+                <div id="displayGraphsContainer">
+                    <svg width="750" height="250">
+                        <rect id="graph0.0" x="50.98" y="55.59" width="51.68" height="129.57"/>
+                        <path id="graph0.1" d="M567.31,139.26V227.2a87.94,87.94,0,1,1,0-175.87h0Z" transform="translate(-20.74 -25.82)"/>
+                        <rect id="graph0.2"  width="10.31" height="10.31"/>
+                        <rect id="graph0.3"  x="698.72" y="163.15" width="10.31" height="10.31"/>
+                        <rect id="graph0.4"  x="290.73" y="194.57" width="10.31" height="10.31"/>
+                        <rect id="graph0.5"  x="684.08" y="4.94" width="10.31" height="10.31"/>
+                        <path id="graph1.0" d="M570.37,139.26l51.69-71.14A87.94,87.94,0,0,1,641.52,191c-17.13,23.57-42,36.25-71.15,36.25Z" transform="translate(-20.74 -25.85)"/>
+                        <rect id="graph1.1" x="145.99" y="9.32" width="51.68" height="175.85"/>
+                        <rect id="graph1.2" width="10.31" height="10.31"/>
+                        <rect id="graph1.3" x="698.72" y="163.15" width="10.31" height="10.31"/>
+                        <rect id="graph1.4" x="290.73" y="194.57" width="10.31" height="10.31"/>
+                        <rect id="graph1.5" x="684.08" y="4.94" width="10.31" height="10.31"/>
+                        <path id="graph2.0" d="M570.37,135.11V51.33c19,0,34.33,4,49.73,15.21Z" transform="translate(-20.74 -25.82)"/>
+                        <rect id="graph2.1" x="240.99" y="92.61" width="51.68" height="92.55"/>
+                        <rect id="graph2.2" width="10.31" height="10.31"/>
+                        <rect id="graph2.3" x="698.72" y="163.15" width="10.31" height="10.31"/>
+                        <rect id="graph2.4" x="290.73" y="194.57" width="10.31" height="10.31"/>
+                        <rect id="graph2.5" x="684.08" y="4.94" width="10.31" height="10.31"/>
+                        <polygon id="graph3.0" points="670.02 187.72 670.02 174 637 174 637 163.15 709.03 163.15 709.03 174 673.02 174 673.02 190.72 610.03 190.72 610.03 187.72 670.02 187.72"/>
+                        <polygon id="graph3.1" points="655.37 29.5 655.37 15.79 622.36 15.79 622.36 4.94 694.38 4.94 694.38 15.79 658.37 15.79 658.37 32.5 595.38 32.5 595.38 29.5 655.37 29.5"/>
+                        <polygon id="graph3.2" points="398.98 153.13 398.98 139.41 431.99 139.41 431.99 128.56 359.96 128.56 359.96 139.41 395.98 139.41 395.98 156.13 458.96 156.13 458.96 153.13 398.98 153.13"/>
+                        <rect id="graph3.3" width="24.42" height="10.31"/>
+                        <rect id="graph3.4" y="45.54" width="24.42" height="10.31"/>
+                        <rect id="graph3.5" y="92.09" width="24.42" height="10.31"/>
+                        <rect id="graph3.6" y="138.64" width="24.42" height="10.31"/>
+                        <rect id="graph3.7" x="232.63" y="194.57" width="68.4" height="10.31"/>
+                        <rect id="graph3.8" x="137.63" y="194.57" width="68.4" height="10.31"/>
+                        <rect id="graph3.9" x="42.62" y="194.57" width="68.4" height="10.31"/>
+                        <polygon id="graph3.10" points="312.91 184.88 312.91 188.08 30.74 188.65 30.74 144.65 36.44 144.65 36.44 141.8 30.74 141.8 30.74 98.38 36.44 98.38 36.44 95.53 30.74 95.53 30.74 52.1 36.44 52.1 36.44 49.25 30.74 49.25 30.74 5.82 36.44 5.82 36.44 2.97 27.89 2.97 27.89 191.51 315.76 190.93 315.76 184.88 312.91 184.88"/>
+                    </svg>
+                </div>
+                <div id="displayCharacterContainer">
+                    <svg width="750" height="250">
+                        <path id="character1" d="M490.47,204.54H286.14a65.68,65.68,0,0,0-53.09,27L219.62,250H555.14l-8.76-14.23A65.65,65.65,0,0,0,490.47,204.54Z" transform="translate(1 1)"/>
+                        <path id="character2.0" d="M298.9,38.51v148.9H299a14.38,14.38,0,0,0,28.66,0h.13a14.38,14.38,0,0,0,28.66,0h.13a14.38,14.38,0,0,0,28.66,0h.12a14.38,14.38,0,0,0,28.66,0h.13a14.38,14.38,0,0,0,28.66,0h.13a14.38,14.38,0,0,0,28.66,0h.06V38.51Z" transform="translate(1 1)"/>
+                        <path id="character0" d="M470.11,95.58h0c0-35.58-28.84-45.82-64.42-45.82H365.55C330,49.75,301.13,60,301.13,95.57h0a17.71,17.71,0,0,0-16.78,23.31,17.45,17.45,0,0,0,16.78,12h.06c0,.62-.06,1.24-.06,1.86,0,26.37,21,49,51.08,58.81v15.57h66.62v-15.5c30.15-9.78,51.28-32.46,51.28-58.88,0-.62,0-1.24-.06-1.86h.06a17.65,17.65,0,0,0,0-35.3Z" transform="translate(1 1)"/>
+                        <circle id="character3.0"cx="431.53" cy="97.93" r="4.93"/>
+                        <circle id="character3.1" cx="341.5" cy="97.93" r="4.93"/>
+                        <polygon id="character3.2" points="389.41 129.75 372.1 129.75 386.29 101.38 390.2 103.33 379.18 125.38 389.41 125.38 389.41 129.75"/>
+                        <path id="character3.3" d="M385.52,151.06A58.94,58.94,0,0,1,359,144.8l2-3.91a54.71,54.71,0,0,0,49,0l2,3.91A59,59,0,0,1,385.52,151.06Z" transform="translate(1 1)"/>
+                        <path id="character3.4" d="M384.89,191.42a158,158,0,0,1-24.48-1.91l-7.93-1.25c-30-9.86-49.42-32.09-49.42-56.67,0-.42,0-.83,0-1.23l0-2.82h-2.27a15.37,15.37,0,0,1-14.7-10.47,15.76,15.76,0,0,1,2.23-14.17,15.53,15.53,0,0,1,12.47-6.32V92.21A19.91,19.91,0,0,0,282,118.37a19.69,19.69,0,0,0,16.69,13.42c.1,26.05,20.07,49.52,51.07,60.18V206.5h4.37V193l5.61.88a162.84,162.84,0,0,0,25.15,2h7.61v-4.37Z" transform="translate(1 1)"/>   
+                        <path id="character3.5" d="M414.46,188.9c30-9.86,51.08-32.1,51.08-56.68,0-.41,0-.82,0-1.23l-.05-2.82h2.27a15.36,15.36,0,0,0,14.7-10.47,15.76,15.76,0,0,0-2.22-14.17,15.57,15.57,0,0,0-12.48-6.31V92.84A19.92,19.92,0,0,1,486.6,119a19.7,19.7,0,0,1-16.69,13.42c-.1,26.05-20.07,49.52-51.08,60.18v14.53h-4.37V193.58" transform="translate(1 1)"/>
+                        <path id="character2.1" d="M298.9,47.89v65.35h0a6.88,6.88,0,0,0,13.71,0h0V65.6h.11a24.23,24.23,0,0,0,46.53,7.15c1.3.17,2.62.33,3.95.48a24.2,24.2,0,0,0,44.34,0q2-.23,4-.48a24.23,24.23,0,0,0,46.53-7.15h.11v44.73h0a6.88,6.88,0,0,0,13.71,0h0V38.51C472,18.67,433.23,2.6,385.43,2.6S298.9,18.67,298.9,38.51Z" transform="translate(1 1)"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="seperator"></div>
+            <div id="valueContainer">
+                <div id="valueText">
+                    <div class="singleValueContainer">
+                        <div id="colorValueBlock0" class="colorValueBlock"></div>
+                        <h3 id="colorValue0" class="colorValue"></h3>
+                    </div>
+                    <div class="singleValueContainer">
+                        <div id="colorValueBlock1" class="colorValueBlock"></div>
+                        <h3 id="colorValue1" class="colorValue"></h3>
+                    </div>
+                    <div class="singleValueContainer">
+                        <div id="colorValueBlock2" class="colorValueBlock"></div>
+                        <h3 id="colorValue2" class="colorValue"></h3>
+                    </div>
+                    <div class="singleValueContainer">
+                        <div id="colorValueBlock3" class="colorValueBlock"></div>
+                        <h3 id="colorValue3" class="colorValue"></h3>
+                    </div>
+                    <div class="singleValueContainer">
+                        <div id="colorValueBlock4" class="colorValueBlock"></div>
+                        <h3 id="colorValue4" class="colorValue"></h3>
+                    </div>
+                </div> 
+            </div> 
+            <div class="seperator"></div>
+            <button id="generatePDF">save current combination data as a PDF file</button>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js" ></script>
+            <script type="text/javascript">
+                function saveBlockColor(){
+                    //for (i = 0; i < numberOfCombinations; i++) {
+                        var color0 = document.getElementById("colorValueBlock0").style.backgroundColor
+                        console.log(color0)
+                    //};
+                };
+                saveBlockColor()
+                function generatePDF() {
+                    var doc = new jsPDF(); 
+                    doc.fromHTML(document.getElementById("valueContainer"), 15,15, 
+                    {
+                        'width': 170
+                    },
+                    function(a) 
+                    {
+                        doc.save("my-color-combination.pdf");
+                    });
+                    }
+                document.getElementById("generatePDF").addEventListener("click", function(){generatePDF()})
+            </script>
+        </div>
+        
+    </div>
+    <div class="seperator"></div>
+    <div id="footer">
+        <a class="footerLink" href="index.html">generator</a>
+        <a class="footerLink" href="about.html">about</a>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
